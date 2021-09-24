@@ -1,0 +1,9 @@
+import cadastro.Genero
+
+model {
+    Genero entityInstance
+}
+
+json {
+    entityInstance g.render(template: "form", model: [entityInstance: entityInstance])
+}

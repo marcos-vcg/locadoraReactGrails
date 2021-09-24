@@ -1,0 +1,9 @@
+import cadastro.Cliente
+
+model {
+    List<Cliente> entities
+}
+
+json {
+    entities g.render(template: "list", collection: entities, var: "cliente")
+}

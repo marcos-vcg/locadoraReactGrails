@@ -1,0 +1,15 @@
+import cadastro.Filme
+import cadastro.Genero
+import cadastro.Categoria
+
+model {
+    Filme entityInstance
+    List<Genero> generoList
+    List<Categoria> categoriaList
+}
+
+json {
+    entityInstance g.render(template: "form", model: [entityInstance: entityInstance])
+    generoList g.render(template: "generoForm", collection: generoList, var: "genero")
+    categoriaList g.render(template: "categoriaForm", collection: categoriaList, var: "categoria")
+}

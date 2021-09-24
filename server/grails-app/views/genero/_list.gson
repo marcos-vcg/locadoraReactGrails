@@ -1,0 +1,10 @@
+import cadastro.Genero
+
+model {
+    Genero genero
+}
+
+json {
+    id genero.id
+    nome genero.nome
+}

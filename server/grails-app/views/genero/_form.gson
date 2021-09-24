@@ -1,0 +1,9 @@
+import cadastro.Genero
+
+model {
+    Genero entityInstance
+}
+
+json {
+    nome entityInstance.nome
+}

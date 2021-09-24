@@ -1,0 +1,12 @@
+import cadastro.Cliente
+
+model {
+    Cliente entityInstance
+}
+
+json {
+    nome entityInstance.nome
+    cpf entityInstance.cpf
+    endereco entityInstance.endereco
+    nascimento entityInstance.nascimento
+}

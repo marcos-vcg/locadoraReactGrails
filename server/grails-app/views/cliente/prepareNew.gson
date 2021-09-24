@@ -1,0 +1,9 @@
+import cadastro.Cliente
+
+model {
+    Cliente entityInstance
+}
+
+json {
+    entityInstance g.render(template: "form", model: [entityInstance: entityInstance])
+}

@@ -1,0 +1,9 @@
+import cadastro.Filme
+
+model {
+    List<Filme> entities
+}
+
+json {
+    entities g.render(template: "list", collection: entities, var: "filme")
+}

@@ -1,0 +1,10 @@
+import cadastro.Categoria
+
+model {
+    Categoria categoria
+}
+
+json {
+    id categoria.id
+    nome categoria.nome
+}

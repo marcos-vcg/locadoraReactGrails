@@ -1,0 +1,5 @@
+package cadastro
+
+class CrudController  {
+
+}

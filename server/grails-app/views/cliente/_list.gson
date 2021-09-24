@@ -1,0 +1,13 @@
+import cadastro.Cliente
+
+model {
+    Cliente cliente
+}
+
+json {
+    id cliente.id
+    nome cliente.nome
+    cpf cliente.cpf
+    endereco cliente.endereco
+    nascimento cliente.nascimento
+}

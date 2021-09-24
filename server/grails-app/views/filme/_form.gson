@@ -1,0 +1,11 @@
+import cadastro.Filme
+
+model {
+    Filme entityInstance
+}
+
+json {
+    nome entityInstance.nome
+    genero entityInstance.genero.id
+    categoria entityInstance.categoria.id
+}

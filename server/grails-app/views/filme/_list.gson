@@ -1,0 +1,12 @@
+import cadastro.Filme
+
+model {
+    Filme filme
+}
+
+json {
+    id filme.id
+    nome filme.nome
+    genero filme.genero.nome
+    categoria filme.categoria.nome
+}
